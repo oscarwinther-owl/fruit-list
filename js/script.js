@@ -133,6 +133,16 @@ function toggleFruitList() {
     //       - statusMessageElement skal vise "Fruit list is closed"
     //       Hint: Skift tekst med .textContent.
     // ✏️ Skriv if/else her ↓
+    if (isVisible) {
+
+        toggleButtonElement.textContent = "Close fruit list";
+        statusMessageElement.textContent = "Fruit list is open";
+    }
+    else{
+        toggleButtonElement.textContent = "Show fruit list";
+        statusMessageElement.textContent = "Fruit list is closed";
+    }
+
 
 
     // ✅ Udleveret: Skjul statusbeskeden efter 2 sekunder.
